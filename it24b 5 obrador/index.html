@@ -1,5 +1,6 @@
 <head></head>
-    <title>Sample cv </title>
+
+    <title>HELLO HELLO </title>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen">
     </head>
     
@@ -8,13 +9,13 @@
         <header>
             <div class="header">
                 <div class="header-Left">
-                    <a href="index.html" class="logo">SAMPLE CV</a>
+                    <a href="index.html" class="logo">HELLO HELLO </a>
                 </div>
             <div class="header-Right">
                 <a href="services.html">Services</a>
                 <a href="resume.html">Resume</a>
                 <a href="about.html">About</a>
-                 <a href="testi.html.html">testimonial</a>
+                 <a href="testimony.html">testimonial</a>
                 <a class="active" href="index.html">Home</a>
             </div>
         </div>
@@ -23,11 +24,84 @@
     
         <section>
                <h1>Welcome to my Page</h1>
-        </section>
-    
+       
+        <body>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Image Gallery</title>
+            <style>
+                body { font-family: Arial, sans-serif; }
+                .gallery {
+                    position: relative;
+                    max-width: 600px;
+                    margin: auto;
+                    overflow: hidden;
+                }
+                .slides {
+                    display: flex;
+                    transition: transform 0.5s ease-in-out;
+                }
+                .slide {
+                    min-width: 100%;
+                }
+                .navigation {
+                    position: absolute;
+                    top: 50%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    transform: translateY(-50%);
+                }
+                .button {
+                    background-color: rgba(255, 255, 255, 0.7);
+                    border: none;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+            </style>
+        </head>
+        <body>
+        
+        <div class="gallery">
+            <div class="slides" id="slides">
+                <img src="https://target.scene7.com/is/image/Target/GUEST_ad51f6c2-49a2-4f5f-876b-70ffa1b3bf71?wid=668&qlt=80&fmt=png" alt="Image 1" class="slide">
+                <img src="https://images.reporteindigo.com/wp-content/uploads/2024/07/Hello-Kitty-no-es-un-gato-Creadores-revelan-la-verdadera-identidad-del-personaje.jpg" alt="Image 2" class="slide">
+                <img src="https://uploads.dailydot.com/2024/07/hello-kitty-is-a-human-girl.png?q=65&auto=format&w=1600&ar=2:1&fit=crop" alt="Image 3" class="slide">
+            </div>
+            <div class="navigation">
+                <button class="button" onclick="prevSlide()">❮</button>
+                <button class="button" onclick="nextSlide()">❯</button>
+            </div>
+        </div>
+        
+        <script>
+            let currentIndex = 0;
+        
+            function showSlide(index) {
+                const slides = document.getElementById('slides');
+                const totalSlides = slides.children.length;
+                if (index >= totalSlides) currentIndex = 0;
+                if (index < 0) currentIndex = totalSlides - 1;
+                slides.style.transform = `translateX(${-currentIndex * 100}%)`;
+            }
+        
+            function nextSlide() {
+                currentIndex++;
+                showSlide(currentIndex);
+            }
+        
+            function prevSlide() {
+                currentIndex--;
+                showSlide(currentIndex);
+            }
+        </script>
+        
+        </body>
+        </html>
+        
         <footer class="">
             <div class="footer">
-                © Copyright <strong><span>Sample CV</span></strong>. All Rights Reserved
+                © Copyright <strong><span>HELLO HELLO</span></strong>. All Rights Reserved
             </div>
         </footer>
     

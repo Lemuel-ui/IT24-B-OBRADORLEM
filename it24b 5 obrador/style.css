@@ -11,7 +11,7 @@ h1{
     font-size: 100px;
 }.header {
     overflow: hidden;
-    background-color: rgb(250, 8, 141);
+    background-color: rgb(245, 2, 245);
     /*padding: 20px 10px;*/
   }
 
@@ -58,8 +58,8 @@ h1{
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(153, 245, 125);
-    color: rgb(13, 151, 75);
+    background-color: rgb(245, 2, 245);
+    color: rgb(0, 0, 0);
     text-align: center;
   }
 
